@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background: #fff;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;    
+    background: rgb(56, 56, 56);
+    box-shadow: 0 10px 30px -22px black;
+    position: fixed;
+    z-index: 2;
+}
+
+.header-top{
+    width: 100%;
+    height: 70%;
+    padding: 0px 34px 0px 34px;
+    align-items: center; 
+    background: #fff;    
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width:auto;
+    height: auto;
+    padding: 0;
+    margin:0;
+}
+
+h1{
+    width: auto;
+    height: auto;
+    font-size: 23px;   
+    color: #3b3b3b;    
+    letter-spacing: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+span{
+    color: #008b82;
+    font-family: "Segoe UI";
+    font-weight:700;
+}
+
+.search-type{
+    position: relative;
+    justify-items: center;
+
+}
+
+input{
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px;
+    border: 1px #757575 groove;
+    outline: none;
+    font-size: 1rem;
+}
+
+button{
+    background-color:#0018cd;
+    padding: 10px 15px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    bottom:0;
+    right: 0;
+    margin: auto;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkblue;
+}
+
+
+.account{
+    width: 134px;
+    height: auto;
+    font-size: 23px;
+    padding: 0px;    
+    display: flex;
+    justify-content: space-between;
+}
+
+.user{
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.account i{
+    width: auto;
+    height: auto;
+    padding: 10px;    
+    border-radius: 40%;
+}
+
+.buy{
+    width: auto;
+    height: auto;
+    padding-left: 27.4px;
+    margin:0;
+    border-left: 1.5px solid rgb(83, 82, 82);
+    cursor: pointer;
+}
+
+.header-bottom{
+    width: 100%;
+    height: 30%;
+    padding: 0;
+    margin: 0;
+    background: #ebebeb;
+    align-content: center;  /*align TOP-BOTTOM*/
+}
+
+nav ul{
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin-left: 34.5px;
+    display: flex;
+    list-style: none;
+}
+
+li{
+    width: auto;
+    height: auto;
+    text-align: center;    
+    justify-items: center;
+}
+
+li a{
+    width: 50%;
+    height: auto;
+    margin-right: 28px;
+    color: rgb(101, 101, 101);
+    font-family: "Segoe UI";
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+a:hover{
+    color: darkcyan;
+}
+
+/*MAIN*/    /*MAIN*/    /*MAIN*/    /*MAIN*/    /*MAIN*/    /*MAIN*/
+
+main{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background: #cccccc;
+    justify-content: center;
+    display: flex;
+}
+
+.container-all{
+    width: 90%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.portada{
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    align-content: center;
+    justify-items: center;
+    border: 1px solid cyan;
+    border-radius: 17px;
+	background: linear-gradient(45deg,red,blue,rgb(128, 0, 79),black);
+	background-size: 400% 400%;
+	position: relative;
+	animation: cambiar 10s ease-in-out infinite;
+}
+
+h2{
+    width: 50%;
+    height: 50%;
+	font-size: 27px;
+	letter-spacing: 2px;
+	border: solid 3px #ffffff;    
+	border-radius: 25px;
+	transform: translate(90%-90%);
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+
+@keyframes cambiar{
+	0%{background-position: 0 50%;}
+	50%{background-position: 100% 50%;}
+	100%{background-position: 0 50%;}
+}
+
+/*////////////////////////////////*/
+
+.article{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-article{
+    width: auto;
+    height: 54px;
+    padding: 0;
+    margin-bottom: 50px;
+    align-content: center;
+    justify-items: center;
+    border-radius: 17px;    
+    box-shadow: -10px 22px 30px -15px rgb(139, 0, 0);    
+
+}
+
+h3{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: darkcyan;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: "Segoe UI";
+    letter-spacing: 3px;
+}
+
+
+.box-article{
+    width: 22.4%;
+    height: 60%;
+    margin: 0 9px 02.5% 9px;
+    padding: 0;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 1px 0px 8px 1px rgb(152, 152, 152);    
+}
+
+.img-box{
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    align-content: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: auto;
+    display: block;
+}
+
+.container-box{
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-price{
+    width: 100%;
+    height: 37px;
+    padding: 0;
+    margin:0;
+    border-radius: 7px;
+    align-content: center;
+    justify-items: center;
+    box-shadow: -10px 22px 30px -15px gray;    
+}
+
+h4{
+    color: rgb(14, 149, 14);
+    font-family: "Segoe UI";
+    font-size: 23.5px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.container-info{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 4px;
+    padding: 0;
+    border-radius: 7px;
+}
+
+p{
+    color: #191919;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.container-buy{
+    width: auto;
+    height: 25px;
+    margin-bottom: 4px;
+    padding: 0;
+    background: blue;
+    border-radius: 15px;   
+    justify-items: center;
+    align-content: center;
+}
+
+.container-buy:hover{
+    background: darkblue;
+}
+
+
+h5{
+    margin: 0;
+    padding:0;
+    color:#cccccc;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+    font-family:'Segoe UI';
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .box-article {
+        width: 20%; /* 1 caja por fila */
+        margin-bottom: 12px;
+    }
+
+    h4 {
+        font-size: 16px; /* Ajuste del tamaño del texto */
+    }
+
+    p {
+        font-size: 12px; /* Ajuste del tamaño del texto */
+    }
+
+    h5 {
+        font-size: 10px; /* Ajuste del tamaño del texto */
+    }
+    
+}
+
