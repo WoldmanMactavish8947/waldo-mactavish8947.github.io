@@ -377,7 +377,7 @@ h5{
 
     
     .header-bottom{
-        width: 95%;
+        width: auto;
         height: '';
         margin: 0;
         align-items: center;
@@ -395,6 +395,7 @@ h5{
     li a{
         width: 100%;
         margin: 0;
+        margin: 0 15px 0 0;
         padding: 0;
         font-size: 12px;
         font-weight: 700;
