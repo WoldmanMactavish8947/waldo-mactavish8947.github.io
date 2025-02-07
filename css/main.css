@@ -393,9 +393,8 @@ h5{
     }
 
     li a{
-        width: 100%;
-        margin: 0;
-        margin: 0 15px 0 0;
+        width: auto;
+        margin: 09px;
         padding: 0;
         font-size: 12px;
         font-weight: 700;
