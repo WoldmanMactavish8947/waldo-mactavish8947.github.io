@@ -428,12 +428,17 @@ h5{
     .header-article{
         margin-bottom: 15px;
         box-shadow: 1px 10px 12px -9px gray;
+        align-content: center;
+        justify-items: center;
     }    
 
     .article{
-        width: auto;
+        width: 100%;
         height: auto;
         border: none;
+        display: flex;
+        align-content: center;
+        justify-items: center;
     }
 
     .box-article{
@@ -441,6 +446,8 @@ h5{
         height: auto;
         margin: 0 0 10px 0;
         padding: 0;
+        align-content: center;
+        justify-items: center;
     }
 
     .container-info{
