@@ -362,7 +362,7 @@ h5{
 
 /*MEDIA QUERY   MEDIA QUERY MEDIA QUERY MEDIA QUERY*/
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 480px){
 
     header{
         width: 100%;
@@ -439,6 +439,7 @@ h5{
         display: flex;
         align-content: center;
         justify-items: center;
+        text-align: center;
     }
 
     .box-article{
