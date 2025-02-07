@@ -460,7 +460,7 @@ h5{
         justify-items: center;
     }
 
-    .container-price h4{
+    h4{
         width: 100%;
         height: auto;        
         box-sizing: border-box;
