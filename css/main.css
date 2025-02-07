@@ -381,7 +381,6 @@ h5{
         height: '';
         margin: 0;
         align-items: center;
-        box-sizing: border-box;
         background-color: red;
     }
 
