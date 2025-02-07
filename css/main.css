@@ -432,6 +432,11 @@ h5{
         justify-items: center;
     }
 
+    h2{
+        
+        text-align: center;
+    }
+
     h3{
         width: 100%;
         height: auto;        
