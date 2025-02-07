@@ -426,6 +426,8 @@ h5{
     }
 
     .header-article h3{
+        width: 100%;
+        height: auto;
         margin-bottom: 15px;
         box-shadow: 1px 10px 12px -9px gray;
         align-content: center;
