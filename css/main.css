@@ -434,6 +434,7 @@ h5{
 
     h3{
         width: 100%;
+        height: auto;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -457,6 +458,14 @@ h5{
         padding: 0;
         align-content: center;
         justify-items: center;
+    }
+
+    .container-price h4{
+        width: 100%;
+        height: auto;        
+        box-sizing: border-box;
+        color: darkmagenta; 
+        text-align: center;
     }
 
     .container-info{
