@@ -425,13 +425,19 @@ h5{
         font-size: 17px;
     }
 
-    .header-article h3{
+    .header-article{
         width: 100%;
         height: auto;
         margin-bottom: 15px;
         box-shadow: 1px 10px 12px -9px gray;
-        align-content: center;
-        justify-items: center;        
+    }
+
+    h3{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: darkmagenta; 
         text-align: center;
     }
 
