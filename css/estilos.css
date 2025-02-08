@@ -320,9 +320,7 @@ footer .redes-footer .fa-envelope:hover{
 
 @media screen and (max-width: 1220px){
     
-    .header-content,
-    .container-content,
-    .container-footer footer{
+    .header-content{
         max-width: 1000px;
         padding: 0 20px;
     }
