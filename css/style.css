@@ -308,7 +308,7 @@ h5{
     width: min(15em, 100%);
     z-index: 10;
     border-left: 1px solid var(--hover-color);
-    transition: right 300ms ease-in-out;
+    transition: all 300ms cubic-bezier(1,0,0,1);
   }
   nav.show{
     right: 0;
@@ -330,6 +330,19 @@ h5{
   nav .home-li{
     margin-right: unset;
   }
+  P{
+    font-family: 'Segoe UI';
+    font-size: 21px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  span{
+    width: auto;
+    font-weight: 800;
+    font-size: 21px;
+    color:rgb(255, 0, 170);
+    letter-spacing: 2px;
+  }
 /**
 
 ** MAIN   MAIN    MAIN    MAIN
@@ -345,7 +358,7 @@ h5{
 
 .portada{
     width: auto;
-    height: 20vh;
+    height: 32vh;
     margin-bottom: 13px;
     border: none;
     border-radius: 08px;

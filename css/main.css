@@ -104,7 +104,7 @@ nav a.accent-link{
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px){
   #open-sidebar-button, #close-sidebar-button{
     display: block;
   }
@@ -138,3 +138,18 @@ nav a.accent-link{
   nav .home-li{
     margin-right: unset;
   }
+  
+  P{
+    font-family: 'Segoe UI';
+    font-size: 21px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  span{
+    width: auto;
+    font-weight: 800;
+    font-size: 21px;
+    color:rgb(255, 0, 170);
+    letter-spacing: 2px;
+  }
+}
