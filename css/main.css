@@ -152,4 +152,29 @@ nav a.accent-link{
     color:rgb(255, 0, 170);
     letter-spacing: 2px;
   }
+
+  main{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 10px 0 10px;
+    justify-items: center;
+  }
+
+  article{
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 5px;
+    border: 2px solid cyan;
+  }
+  
+  .galery{
+    width: 48%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
