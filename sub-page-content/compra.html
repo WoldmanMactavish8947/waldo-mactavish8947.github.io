@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pricing</title>
+  <title>Compras</title>
   <link rel="stylesheet" href="../css/main.css">
   <script src="../script.js" defer></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -32,14 +33,40 @@
   </nav>
   
   <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+  <!--METODO ABREVIADO    ( img.img[src="#" alt="imagen $"]*2 )-->
 
-  <main>
-    <article>
-      <div class="galery">
-        <img src="../img/thumbnails/cartera morado 1.png" width="100%" height="auto">
+  <main class="container-slider">
+
+    <div class="container-carousel">      
+      <div class="carruseles" id="slider">        
+        <section class="slider-section">
+          <img src="../img/cartera morado 1.png">
+        </section>
+        <section class="slider-section">
+          <img src="../img/cartera morado 2.png">
+        </section>
+        <section class="slider-section">
+          <img src="../img/cartera morado 3.png">
+        </section>
       </div>
-    </article>
+    <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+    <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+    <div class="cod">CÓD:   0 0 8 8 C</div>
+    </div>
+    <h1 class="name-product">
+      Carterita para decorar tus cosas, unico diseño personalizado
+    </h1>
+
+    <h2 class="price-product">$1.000</h2>
+
+    <buttom>
+      <a href="https://wa.me/+5493735507262?text=Hola%2c%20me%20interesa%20este%20producto%3A%20C%20O%20D%2A(%200%200%208%208%20C%20)"><span>Obtener producto</span></a>
+    </buttom>
+    <!--<a href="https://wa.me/123456789?text=Hola%2C+tengo+una+duda." target="_blank">
+      <img src="tu-imagen-del-botón.png" alt="Botón WhatsApp">-->
+  </a>
   </main>
-  
+
 </body>
+
 </html>

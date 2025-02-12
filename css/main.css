@@ -5,6 +5,10 @@
   --accent-color: #0071FF;
   --text-color: #c9c9c9;
 }
+/*
+    Estilos generales para que las etiquetas no contengan propiedades
+    que nos estorben y en todos los navegadores se vean correctamente
+*/
 *{
   margin: 0;
   padding: 0;
@@ -102,11 +106,10 @@ nav a.accent-link{
 }
 
 
-
-
 @media screen and (max-width: 700px){
   #open-sidebar-button, #close-sidebar-button{
     display: block;
+    text-decoration: none;
   }
   nav{
     position: fixed;
@@ -153,28 +156,148 @@ nav a.accent-link{
     letter-spacing: 2px;
   }
 
-  main{
+  /*///////////////////////////////////////////////////////*/
+
+  .container-slider{
     width: 100%;
     height: auto;
+    padding: 0;
     margin: 0;
-    padding: 0 10px 0 10px;
     justify-items: center;
+    align-content: center;
+    text-decoration: none;
   }
 
-  article{
-    width: 100%;
+  .container-carousel {
+    position: relative;
+    width: 92%;
     height: auto;
-    background: rgba(0, 0, 0, 0.5);
-    margin: 0;
-    padding: 5px;
-    border: 2px solid cyan;
+    background-color: #11121a;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+  
   }
   
-  .galery{
-    width: 48%;
-    height: auto;
-    margin: 0;
+  .carruseles {
+    width: 360%;
+    height: 100%;
+    display: flex;
     padding: 0;
-    background: rgba(0, 0, 0, 0.5);
   }
+
+  .cod{
+    width: 90%;
+    height: auto;
+    color: #fff;
+    font-size: 12px;
+    text-align: right;
+    margin: 0;
+    padding: 0 0 5px 0;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+  }
+  
+  .slider-section {
+    width: calc(100% / 3);
+    height: 350px;
+  }
+  
+  .slider-section img {
+    width: 80%;
+    height: 100%;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .btn-left,
+  .btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+  }
+  
+  .btn-left:hover,
+  .btn-right:hover {
+    background-color: #333333d4;
+    color: #fff;
+  }
+  
+  .btn-left {
+    left: 10px;
+  }
+  
+  .btn-right {
+    right: 10px;
+  }
+
+  .name-product{
+    width: 95%;
+    height: auto;
+    color: cyan;
+    display: flex;
+    text-align: center;
+    margin: 15px 0 15px 0;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+  }
+
+  .price-product{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 0 18px 0;
+    font-family: 'Segoe UI';
+    color: rgb(109, 246, 253);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  buttom{
+    border: 0;
+    background-image: linear-gradient(
+      150deg,
+      #9500ff,
+      #09f,
+      #00DDFF
+      );
+    border-radius: 8px;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  buttom a {    
+    color: #fff;
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+    text-decoration: none;
+  }
+
+  buttom:hover span{
+    background: none;
+  }
+
+  button:active{
+    transform: scale(0.9);
+  }
+
 }
