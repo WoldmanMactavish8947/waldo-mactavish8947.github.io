@@ -304,10 +304,12 @@ buttom .open-buy {
   padding: 16px 24px;
   border-radius: 6px;
   transition: .3s;
-  text-decoration: none;
   letter-spacing: 2.5px;
 }
-
+a{
+  text-decoration: none;
+  color: #fff;
+}
 buttom:hover .open-buy{
   background: none;
 }
