@@ -157,147 +157,231 @@ nav a.accent-link{
   }
 
   /*///////////////////////////////////////////////////////*/
+/**
+*!  CAROUSEL con imagenes   //////    CAROUSEL con imagenes   //////
+*/
+.container-slider{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+  align-content: center;
+  text-decoration: none;
+}
 
-  .container-slider{
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    justify-items: center;
-    align-content: center;
-    text-decoration: none;
+.container-carousel {
+  position: relative;
+  width: 96.5%;
+  height: auto;
+  background-color: #11121a;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+  border-radius: 15px;
+  overflow: hidden;
+
+}
+
+.carruseles {
+  width: 360%;
+  height: 100%;
+  display: flex;
+  padding: 0;
+}
+
+.slider-section {
+  width: calc(100% / 3);
+  height: 350px;
+}
+
+.slider-section img {
+  width: 80%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/**
+*?  BUTTON LEFT-RIGHT   ////////////  BUTTON LEFT-RIGHT   ////////////
+*/
+
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff81;
+  transform: translate(0,-50%);
+  transition: .5s ease;
+  user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background-color: #333333d4;
+  color: #fff;
+}
+
+.btn-left {
+  left: 10px;
+}
+
+.btn-right {
+  right: 10px;
+}
+
+.info-products{
+  width: 95%;
+  height: auto;
+}
+.name-product{
+  width: 100%;
+  height: auto;
+  color: #f0f0f0;
+  display: flex;
+  text-align: left;
+  margin: 17px 0 17px 0;
+  letter-spacing: 1.5px;
+  font-size: 27px;
+  font-family: 'Segoe UI';
+  font-weight: 400;
+}
+.category{
+  width: 100%;
+  height: auto;
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-size: 13px;
+  letter-spacing: 1.4px;
+}
+.cod {
+  width: 100%;
+  height: auto;
+  font-size: 13px;
+  text-align: left;
+  margin: 0px;
+  font-weight: 400;
+  color: #c9c9c9;
+  letter-spacing: 1.4px;
+}
+.price-product{
+  width: 100%;
+  height: auto;
+  text-align: left;
+  margin: 17px 0 18px 0;
+  font-family: 'Segoe UI';
+  color: #f0f0f0;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+buttom{
+  border: 0;
+  color: #fff;
+  background-image: linear-gradient(
+    150deg,
+    #9500ff,
+    #09f,
+    #00DDFF
+    );
+  border-radius: 8px;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+buttom .open-buy {   
+  background-color: #0b0d15;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: .3s;
+  text-decoration: none;
+  letter-spacing: 2.5px;
+}
+
+buttom:hover .open-buy{
+  background: none;
+}
+
+button:active{
+  transform: scale(0.9); 
+  color: #fff;
+}
+
+/**
+*!  TARGETA DE PRESENTACION   //////////    TARGETA DE PRESENTACION   //////////
+**  FONDO ANIMADO!!!
+*/
+
+
+.content{
+  width: 100%;
+  height: auto:
+  margin: 0;
+  padding: 0;
+  justify-items: center;
+}
+
+.card{
+  width: 95%;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  padding: 1.3em;
+  background: #1c1f2b;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+.title-card{
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.text-card{    
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #a2a5b3;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+  }
+.card::after, .card::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
   }
 
-  .container-carousel {
-    position: relative;
-    width: 92%;
-    height: auto;
-    background-color: #11121a;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
-    border-radius: 15px;
-    overflow: hidden;
-  
+.card::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
   }
-  
-  .carruseles {
-    width: 360%;
-    height: 100%;
-    display: flex;
-    padding: 0;
+  to{
+    --angle: 360deg;
   }
-
-  .cod{
-    width: 90%;
-    height: auto;
-    color: #fff;
-    font-size: 12px;
-    text-align: right;
-    margin: 0;
-    padding: 0 0 5px 0;
-    font-family: 'Segoe UI';
-    font-weight: 400;
-  }
-  
-  .slider-section {
-    width: calc(100% / 3);
-    height: 350px;
-  }
-  
-  .slider-section img {
-    width: 80%;
-    height: 100%;
-    padding: 0;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  
-  .btn-left,
-  .btn-right {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    font-size: 2rem;
-    background-color: transparent;
-    border-radius: 50%;
-    padding: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    color: #ffffff81;
-    transform: translate(0,-50%);
-    transition: .5s ease;
-    user-select: none;
-  }
-  
-  .btn-left:hover,
-  .btn-right:hover {
-    background-color: #333333d4;
-    color: #fff;
-  }
-  
-  .btn-left {
-    left: 10px;
-  }
-  
-  .btn-right {
-    right: 10px;
-  }
-
-  .name-product{
-    width: 95%;
-    height: auto;
-    color: cyan;
-    display: flex;
-    text-align: center;
-    margin: 15px 0 15px 0;
-    letter-spacing: 1.5px;
-    font-size: 22px;
-    font-family: 'Segoe UI';
-    font-weight: 500;
-  }
-
-  .price-product{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin: 0 0 18px 0;
-    font-family: 'Segoe UI';
-    color: rgb(109, 246, 253);
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 2px;
-  }
-
-  buttom{
-    border: 0;
-    background-image: linear-gradient(
-      150deg,
-      #9500ff,
-      #09f,
-      #00DDFF
-      );
-    border-radius: 8px;
-    display: flex;
-    font-size: 18px;
-    padding: 4px;
-    cursor: pointer;
-    transition: .3s;
-  }
-
-  buttom a {    
-    color: #fff;
-    background-color: #111;
-    padding: 16px 24px;
-    border-radius: 6px;
-    transition: .3s;
-    text-decoration: none;
-  }
-
-  buttom:hover span{
-    background: none;
-  }
-
-  button:active{
-    transform: scale(0.9);
-  }
-
 }

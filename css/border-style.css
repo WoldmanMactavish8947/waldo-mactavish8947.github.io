@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;  
+  }
+  html{
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    color: #f0f0f0;
+  }
+  body{
+    min-height: ;
+    background: #0b0d15;
+    color: #a2a5b3;
+    align-content: center;
+  }
+  .card{
+    margin-top: 17px;
+    margin-bottom: 20px;
+    padding: 1.3em;
+    width: 94%;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+  }
+  .title-card{
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .text-card{    
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-align: left;
+  }
+  
+  @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  .card::after, .card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+  }
+  .card::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
